@@ -1,0 +1,7 @@
+ComparisonFailure: tarkasta koodi
+mh = new Muutoshistoria();
+mh.lisaa(5.0);
+mh.lisaa(12.0);
+mh.lisaa(4.0);
+System.out.println(mh)
+ expected:<[5.0[, 12.0, ]4.0]> but was:<[5.0[12.0]4.0]>
