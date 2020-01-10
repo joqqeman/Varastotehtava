@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class Muutoshistoria {
+    
+    private ArrayList<Double> muutoshistoria;
+    
+    
+    public Muutoshistoria() {
+        this.muutoshistoria = new ArrayList<>(); 
+    }
+    
+    public void lisaa(double tilanne) {
+        muutoshistoria.add(tilanne);
+    }
+    
+    public void nollaa() {
+        muutoshistoria.clear();
+    }
+    
+    public String toString() {
+        String tulostettavat = "";
+        for (Double tilanne : muutoshistoria)
+            tulostettavat += tilanne.toString();
+        return "[" + tulostettavat + "]";
+    }
+    
+}
